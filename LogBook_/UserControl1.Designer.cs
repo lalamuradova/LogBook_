@@ -29,74 +29,120 @@ namespace LogBook_
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.UserGroupBox = new System.Windows.Forms.GroupBox();
-            this.CommentListBox = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.commentTxtBox = new System.Windows.Forms.TextBox();
+            this.darkDiamond3PBox = new System.Windows.Forms.PictureBox();
+            this.darkDiamond2PBox = new System.Windows.Forms.PictureBox();
+            this.darkDiamond1PBox = new System.Windows.Forms.PictureBox();
+            this.XBtn = new System.Windows.Forms.Button();
             this.RefuseGunaBtn = new Guna.UI2.WinForms.Guna2Button();
             this.SaveGunaBtn = new Guna.UI2.WinForms.Guna2Button();
             this.NoLbl = new System.Windows.Forms.Label();
             this.CommentPictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Diamond3PBox = new System.Windows.Forms.PictureBox();
+            this.Diamond1PBox = new System.Windows.Forms.PictureBox();
             this.SinifIsiGunaCombobox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.YoxlamaGunaCombobox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.BlueGunaRadioBtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.FuchsiaGunaRadioBtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.CrimsonGunaRadioBtn = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Diamond2PBox = new System.Windows.Forms.PictureBox();
             this.DateLbl = new System.Windows.Forms.Label();
             this.FullnameLbl = new System.Windows.Forms.Label();
             this.UserGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond3PBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond2PBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond1PBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommentPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diamond3PBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diamond1PBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diamond2PBox)).BeginInit();
             this.SuspendLayout();
             // 
             // UserGroupBox
             // 
             this.UserGroupBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.UserGroupBox.Controls.Add(this.CommentListBox);
-            this.UserGroupBox.Controls.Add(this.button1);
+            this.UserGroupBox.Controls.Add(this.commentTxtBox);
+            this.UserGroupBox.Controls.Add(this.darkDiamond3PBox);
+            this.UserGroupBox.Controls.Add(this.darkDiamond2PBox);
+            this.UserGroupBox.Controls.Add(this.darkDiamond1PBox);
+            this.UserGroupBox.Controls.Add(this.XBtn);
             this.UserGroupBox.Controls.Add(this.RefuseGunaBtn);
             this.UserGroupBox.Controls.Add(this.SaveGunaBtn);
             this.UserGroupBox.Controls.Add(this.NoLbl);
             this.UserGroupBox.Controls.Add(this.CommentPictureBox);
-            this.UserGroupBox.Controls.Add(this.pictureBox3);
-            this.UserGroupBox.Controls.Add(this.pictureBox2);
+            this.UserGroupBox.Controls.Add(this.Diamond3PBox);
+            this.UserGroupBox.Controls.Add(this.Diamond1PBox);
             this.UserGroupBox.Controls.Add(this.SinifIsiGunaCombobox);
             this.UserGroupBox.Controls.Add(this.YoxlamaGunaCombobox);
             this.UserGroupBox.Controls.Add(this.BlueGunaRadioBtn);
             this.UserGroupBox.Controls.Add(this.FuchsiaGunaRadioBtn);
             this.UserGroupBox.Controls.Add(this.CrimsonGunaRadioBtn);
-            this.UserGroupBox.Controls.Add(this.pictureBox1);
+            this.UserGroupBox.Controls.Add(this.Diamond2PBox);
             this.UserGroupBox.Controls.Add(this.DateLbl);
             this.UserGroupBox.Controls.Add(this.FullnameLbl);
-            this.UserGroupBox.Location = new System.Drawing.Point(0, 3);
+            this.UserGroupBox.Location = new System.Drawing.Point(0, 1);
             this.UserGroupBox.Name = "UserGroupBox";
-            this.UserGroupBox.Size = new System.Drawing.Size(1362, 137);
+            this.UserGroupBox.Size = new System.Drawing.Size(1385, 125);
             this.UserGroupBox.TabIndex = 12;
             this.UserGroupBox.TabStop = false;
             // 
-            // CommentListBox
+            // commentTxtBox
             // 
-            this.CommentListBox.FormattingEnabled = true;
-            this.CommentListBox.ItemHeight = 20;
-            this.CommentListBox.Location = new System.Drawing.Point(984, 9);
-            this.CommentListBox.Name = "CommentListBox";
-            this.CommentListBox.Size = new System.Drawing.Size(303, 64);
-            this.CommentListBox.TabIndex = 30;
-            this.CommentListBox.Visible = false;
+            this.commentTxtBox.Location = new System.Drawing.Point(1069, 52);
+            this.commentTxtBox.Name = "commentTxtBox";
+            this.commentTxtBox.Size = new System.Drawing.Size(287, 26);
+            this.commentTxtBox.TabIndex = 34;
+            this.commentTxtBox.Visible = false;
             // 
-            // button1
+            // darkDiamond3PBox
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(871, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 35);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
+            this.darkDiamond3PBox.Image = global::LogBook_.Properties.Resources.diamond_10_;
+            this.darkDiamond3PBox.Location = new System.Drawing.Point(877, 63);
+            this.darkDiamond3PBox.Name = "darkDiamond3PBox";
+            this.darkDiamond3PBox.Size = new System.Drawing.Size(26, 25);
+            this.darkDiamond3PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.darkDiamond3PBox.TabIndex = 33;
+            this.darkDiamond3PBox.TabStop = false;
+            this.darkDiamond3PBox.Visible = false;
+            this.darkDiamond3PBox.Click += new System.EventHandler(this.darkDiamond3PBox_Click);
+            // 
+            // darkDiamond2PBox
+            // 
+            this.darkDiamond2PBox.Image = global::LogBook_.Properties.Resources.diamond_10_;
+            this.darkDiamond2PBox.Location = new System.Drawing.Point(845, 63);
+            this.darkDiamond2PBox.Name = "darkDiamond2PBox";
+            this.darkDiamond2PBox.Size = new System.Drawing.Size(26, 25);
+            this.darkDiamond2PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.darkDiamond2PBox.TabIndex = 32;
+            this.darkDiamond2PBox.TabStop = false;
+            this.darkDiamond2PBox.Visible = false;
+            this.darkDiamond2PBox.Click += new System.EventHandler(this.darkDiamond2PBox_Click);
+            // 
+            // darkDiamond1PBox
+            // 
+            this.darkDiamond1PBox.Image = global::LogBook_.Properties.Resources.diamond_10_;
+            this.darkDiamond1PBox.Location = new System.Drawing.Point(813, 63);
+            this.darkDiamond1PBox.Name = "darkDiamond1PBox";
+            this.darkDiamond1PBox.Size = new System.Drawing.Size(26, 25);
+            this.darkDiamond1PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.darkDiamond1PBox.TabIndex = 31;
+            this.darkDiamond1PBox.TabStop = false;
+            this.darkDiamond1PBox.Visible = false;
+            this.darkDiamond1PBox.Click += new System.EventHandler(this.darkDiamond1PBox_Click);
+            // 
+            // XBtn
+            // 
+            this.XBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XBtn.Location = new System.Drawing.Point(909, 56);
+            this.XBtn.Name = "XBtn";
+            this.XBtn.Size = new System.Drawing.Size(37, 35);
+            this.XBtn.TabIndex = 29;
+            this.XBtn.Text = "X";
+            this.XBtn.UseVisualStyleBackColor = true;
+            this.XBtn.Click += new System.EventHandler(this.XBtn_Click);
             // 
             // RefuseGunaBtn
             // 
@@ -113,7 +159,7 @@ namespace LogBook_
             this.RefuseGunaBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RefuseGunaBtn.ForeColor = System.Drawing.Color.White;
             this.RefuseGunaBtn.HoverState.Parent = this.RefuseGunaBtn;
-            this.RefuseGunaBtn.Location = new System.Drawing.Point(1127, 79);
+            this.RefuseGunaBtn.Location = new System.Drawing.Point(1212, 84);
             this.RefuseGunaBtn.Name = "RefuseGunaBtn";
             this.RefuseGunaBtn.ShadowDecoration.Parent = this.RefuseGunaBtn;
             this.RefuseGunaBtn.Size = new System.Drawing.Size(144, 35);
@@ -136,7 +182,7 @@ namespace LogBook_
             this.SaveGunaBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveGunaBtn.ForeColor = System.Drawing.Color.White;
             this.SaveGunaBtn.HoverState.Parent = this.SaveGunaBtn;
-            this.SaveGunaBtn.Location = new System.Drawing.Point(984, 79);
+            this.SaveGunaBtn.Location = new System.Drawing.Point(1069, 84);
             this.SaveGunaBtn.Name = "SaveGunaBtn";
             this.SaveGunaBtn.ShadowDecoration.Parent = this.SaveGunaBtn;
             this.SaveGunaBtn.Size = new System.Drawing.Size(137, 35);
@@ -157,7 +203,7 @@ namespace LogBook_
             // CommentPictureBox
             // 
             this.CommentPictureBox.Image = global::LogBook_.Properties.Resources.indir__1_;
-            this.CommentPictureBox.Location = new System.Drawing.Point(928, 52);
+            this.CommentPictureBox.Location = new System.Drawing.Point(1013, 52);
             this.CommentPictureBox.Name = "CommentPictureBox";
             this.CommentPictureBox.Size = new System.Drawing.Size(50, 36);
             this.CommentPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -165,25 +211,27 @@ namespace LogBook_
             this.CommentPictureBox.TabStop = false;
             this.CommentPictureBox.Click += new System.EventHandler(this.CommentPictureBox_Click);
             // 
-            // pictureBox3
+            // Diamond3PBox
             // 
-            this.pictureBox3.Image = global::LogBook_.Properties.Resources.indir;
-            this.pictureBox3.Location = new System.Drawing.Point(839, 63);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
+            this.Diamond3PBox.Image = global::LogBook_.Properties.Resources.indir;
+            this.Diamond3PBox.Location = new System.Drawing.Point(877, 63);
+            this.Diamond3PBox.Name = "Diamond3PBox";
+            this.Diamond3PBox.Size = new System.Drawing.Size(26, 25);
+            this.Diamond3PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Diamond3PBox.TabIndex = 23;
+            this.Diamond3PBox.TabStop = false;
+            this.Diamond3PBox.Click += new System.EventHandler(this.Diamond3PBox_Click);
             // 
-            // pictureBox2
+            // Diamond1PBox
             // 
-            this.pictureBox2.Image = global::LogBook_.Properties.Resources.indir;
-            this.pictureBox2.Location = new System.Drawing.Point(775, 63);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
+            this.Diamond1PBox.Image = global::LogBook_.Properties.Resources.indir;
+            this.Diamond1PBox.Location = new System.Drawing.Point(813, 63);
+            this.Diamond1PBox.Name = "Diamond1PBox";
+            this.Diamond1PBox.Size = new System.Drawing.Size(26, 25);
+            this.Diamond1PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Diamond1PBox.TabIndex = 22;
+            this.Diamond1PBox.TabStop = false;
+            this.Diamond1PBox.Click += new System.EventHandler(this.Diamond1PBox_Click);
             // 
             // SinifIsiGunaCombobox
             // 
@@ -211,10 +259,10 @@ namespace LogBook_
             "2",
             "1"});
             this.SinifIsiGunaCombobox.ItemsAppearance.Parent = this.SinifIsiGunaCombobox;
-            this.SinifIsiGunaCombobox.Location = new System.Drawing.Point(631, 55);
+            this.SinifIsiGunaCombobox.Location = new System.Drawing.Point(681, 54);
             this.SinifIsiGunaCombobox.Name = "SinifIsiGunaCombobox";
             this.SinifIsiGunaCombobox.ShadowDecoration.Parent = this.SinifIsiGunaCombobox;
-            this.SinifIsiGunaCombobox.Size = new System.Drawing.Size(75, 36);
+            this.SinifIsiGunaCombobox.Size = new System.Drawing.Size(104, 36);
             this.SinifIsiGunaCombobox.TabIndex = 21;
             // 
             // YoxlamaGunaCombobox
@@ -243,27 +291,27 @@ namespace LogBook_
             "2",
             "1"});
             this.YoxlamaGunaCombobox.ItemsAppearance.Parent = this.YoxlamaGunaCombobox;
-            this.YoxlamaGunaCombobox.Location = new System.Drawing.Point(537, 55);
+            this.YoxlamaGunaCombobox.Location = new System.Drawing.Point(573, 55);
             this.YoxlamaGunaCombobox.Name = "YoxlamaGunaCombobox";
             this.YoxlamaGunaCombobox.ShadowDecoration.Parent = this.YoxlamaGunaCombobox;
-            this.YoxlamaGunaCombobox.Size = new System.Drawing.Size(75, 36);
+            this.YoxlamaGunaCombobox.Size = new System.Drawing.Size(102, 36);
             this.YoxlamaGunaCombobox.TabIndex = 20;
             // 
             // BlueGunaRadioBtn
             // 
             this.BlueGunaRadioBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.BlueGunaRadioBtn.CheckedState.BorderThickness = 0;
-            this.BlueGunaRadioBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.BlueGunaRadioBtn.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.BlueGunaRadioBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(58)))), ((int)(((byte)(228)))));
+            this.BlueGunaRadioBtn.CheckedState.InnerColor = System.Drawing.Color.Blue;
             this.BlueGunaRadioBtn.CheckedState.Parent = this.BlueGunaRadioBtn;
             this.BlueGunaRadioBtn.ForeColor = System.Drawing.Color.Blue;
-            this.BlueGunaRadioBtn.Location = new System.Drawing.Point(352, 68);
+            this.BlueGunaRadioBtn.Location = new System.Drawing.Point(404, 68);
             this.BlueGunaRadioBtn.Name = "BlueGunaRadioBtn";
             this.BlueGunaRadioBtn.ShadowDecoration.Parent = this.BlueGunaRadioBtn;
             this.BlueGunaRadioBtn.Size = new System.Drawing.Size(20, 20);
             this.BlueGunaRadioBtn.TabIndex = 18;
             this.BlueGunaRadioBtn.Text = "guna2CustomRadioButton1";
-            this.BlueGunaRadioBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.BlueGunaRadioBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(58)))), ((int)(((byte)(228)))));
             this.BlueGunaRadioBtn.UncheckedState.BorderThickness = 2;
             this.BlueGunaRadioBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.BlueGunaRadioBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -273,17 +321,17 @@ namespace LogBook_
             // 
             this.FuchsiaGunaRadioBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.FuchsiaGunaRadioBtn.CheckedState.BorderThickness = 0;
-            this.FuchsiaGunaRadioBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FuchsiaGunaRadioBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.FuchsiaGunaRadioBtn.CheckedState.InnerColor = System.Drawing.Color.White;
             this.FuchsiaGunaRadioBtn.CheckedState.Parent = this.FuchsiaGunaRadioBtn;
             this.FuchsiaGunaRadioBtn.ForeColor = System.Drawing.Color.Fuchsia;
-            this.FuchsiaGunaRadioBtn.Location = new System.Drawing.Point(397, 68);
+            this.FuchsiaGunaRadioBtn.Location = new System.Drawing.Point(430, 68);
             this.FuchsiaGunaRadioBtn.Name = "FuchsiaGunaRadioBtn";
             this.FuchsiaGunaRadioBtn.ShadowDecoration.Parent = this.FuchsiaGunaRadioBtn;
             this.FuchsiaGunaRadioBtn.Size = new System.Drawing.Size(20, 20);
             this.FuchsiaGunaRadioBtn.TabIndex = 17;
             this.FuchsiaGunaRadioBtn.Text = "guna2CustomRadioButton3";
-            this.FuchsiaGunaRadioBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.FuchsiaGunaRadioBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             this.FuchsiaGunaRadioBtn.UncheckedState.BorderThickness = 2;
             this.FuchsiaGunaRadioBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.FuchsiaGunaRadioBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -293,37 +341,38 @@ namespace LogBook_
             // 
             this.CrimsonGunaRadioBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CrimsonGunaRadioBtn.CheckedState.BorderThickness = 0;
-            this.CrimsonGunaRadioBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CrimsonGunaRadioBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(20)))), ((int)(((byte)(60)))));
             this.CrimsonGunaRadioBtn.CheckedState.InnerColor = System.Drawing.Color.White;
             this.CrimsonGunaRadioBtn.CheckedState.Parent = this.CrimsonGunaRadioBtn;
             this.CrimsonGunaRadioBtn.ForeColor = System.Drawing.Color.Crimson;
-            this.CrimsonGunaRadioBtn.Location = new System.Drawing.Point(448, 68);
+            this.CrimsonGunaRadioBtn.Location = new System.Drawing.Point(456, 68);
             this.CrimsonGunaRadioBtn.Name = "CrimsonGunaRadioBtn";
             this.CrimsonGunaRadioBtn.ShadowDecoration.Parent = this.CrimsonGunaRadioBtn;
             this.CrimsonGunaRadioBtn.Size = new System.Drawing.Size(20, 20);
             this.CrimsonGunaRadioBtn.TabIndex = 16;
             this.CrimsonGunaRadioBtn.Text = "guna2CustomRadioButton2";
-            this.CrimsonGunaRadioBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.CrimsonGunaRadioBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(20)))), ((int)(((byte)(60)))));
             this.CrimsonGunaRadioBtn.UncheckedState.BorderThickness = 2;
             this.CrimsonGunaRadioBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.CrimsonGunaRadioBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.CrimsonGunaRadioBtn.UncheckedState.Parent = this.CrimsonGunaRadioBtn;
             // 
-            // pictureBox1
+            // Diamond2PBox
             // 
-            this.pictureBox1.Image = global::LogBook_.Properties.Resources.indir;
-            this.pictureBox1.Location = new System.Drawing.Point(807, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.Diamond2PBox.Image = global::LogBook_.Properties.Resources.indir;
+            this.Diamond2PBox.Location = new System.Drawing.Point(845, 63);
+            this.Diamond2PBox.Name = "Diamond2PBox";
+            this.Diamond2PBox.Size = new System.Drawing.Size(26, 25);
+            this.Diamond2PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Diamond2PBox.TabIndex = 14;
+            this.Diamond2PBox.TabStop = false;
+            this.Diamond2PBox.Click += new System.EventHandler(this.Diamond2PBox_Click);
             // 
             // DateLbl
             // 
             this.DateLbl.AutoSize = true;
             this.DateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLbl.Location = new System.Drawing.Point(194, 68);
+            this.DateLbl.Location = new System.Drawing.Point(219, 70);
             this.DateLbl.Name = "DateLbl";
             this.DateLbl.Size = new System.Drawing.Size(48, 22);
             this.DateLbl.TabIndex = 6;
@@ -345,34 +394,41 @@ namespace LogBook_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.UserGroupBox);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(1365, 142);
+            this.Size = new System.Drawing.Size(1386, 129);
             this.UserGroupBox.ResumeLayout(false);
             this.UserGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond3PBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond2PBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond1PBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommentPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diamond3PBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diamond1PBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Diamond2PBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.GroupBox UserGroupBox;
+        private System.Windows.Forms.TextBox commentTxtBox;
+        private System.Windows.Forms.PictureBox darkDiamond3PBox;
+        private System.Windows.Forms.PictureBox darkDiamond2PBox;
+        private System.Windows.Forms.PictureBox darkDiamond1PBox;
+        private System.Windows.Forms.Button XBtn;
+        private Guna.UI2.WinForms.Guna2Button RefuseGunaBtn;
+        private Guna.UI2.WinForms.Guna2Button SaveGunaBtn;
+        private System.Windows.Forms.Label NoLbl;
+        private System.Windows.Forms.PictureBox CommentPictureBox;
+        private System.Windows.Forms.PictureBox Diamond3PBox;
+        private System.Windows.Forms.PictureBox Diamond1PBox;
+        private Guna.UI2.WinForms.Guna2ComboBox SinifIsiGunaCombobox;
+        private Guna.UI2.WinForms.Guna2ComboBox YoxlamaGunaCombobox;
         private Guna.UI2.WinForms.Guna2CustomRadioButton BlueGunaRadioBtn;
         private Guna.UI2.WinForms.Guna2CustomRadioButton FuchsiaGunaRadioBtn;
         private Guna.UI2.WinForms.Guna2CustomRadioButton CrimsonGunaRadioBtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Diamond2PBox;
         private System.Windows.Forms.Label DateLbl;
         private System.Windows.Forms.Label FullnameLbl;
-        private Guna.UI2.WinForms.Guna2ComboBox YoxlamaGunaCombobox;
-        private Guna.UI2.WinForms.Guna2ComboBox SinifIsiGunaCombobox;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label NoLbl;
-        private System.Windows.Forms.PictureBox CommentPictureBox;
-        private Guna.UI2.WinForms.Guna2Button RefuseGunaBtn;
-        private Guna.UI2.WinForms.Guna2Button SaveGunaBtn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox CommentListBox;
     }
 }

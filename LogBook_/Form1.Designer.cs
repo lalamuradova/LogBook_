@@ -36,10 +36,10 @@ namespace LogBook_
             this.TeacherradioBtn = new System.Windows.Forms.RadioButton();
             this.SecondTeacherRadioBtn = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.SubjectlistBox = new System.Windows.Forms.ListBox();
             this.SaveGunaBtn = new Guna.UI2.WinForms.Guna2Button();
             this.RefuseGunaBtn = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@ namespace LogBook_
             this.TeacherNameTxtBox = new System.Windows.Forms.TextBox();
             this.TeacherNameLBl = new System.Windows.Forms.Label();
             this.TeacherLbl = new System.Windows.Forms.Label();
+            this.subjectTxtBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.penPictureBox)).BeginInit();
@@ -75,9 +76,9 @@ namespace LogBook_
             this.guna2Button1.DisabledState.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Font = new System.Drawing.Font("Showcard Gothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.MediumPurple;
+            this.guna2Button1.ForeColor = System.Drawing.Color.Crimson;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(1244, -7);
+            this.guna2Button1.Location = new System.Drawing.Point(1329, 3);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(57, 52);
@@ -134,16 +135,6 @@ namespace LogBook_
             this.label2.Text = "Dərsin mövzusu";
             this.label2.Visible = false;
             // 
-            // SubjectlistBox
-            // 
-            this.SubjectlistBox.FormattingEnabled = true;
-            this.SubjectlistBox.ItemHeight = 20;
-            this.SubjectlistBox.Location = new System.Drawing.Point(495, 71);
-            this.SubjectlistBox.Name = "SubjectlistBox";
-            this.SubjectlistBox.Size = new System.Drawing.Size(473, 64);
-            this.SubjectlistBox.TabIndex = 6;
-            this.SubjectlistBox.Visible = false;
-            // 
             // SaveGunaBtn
             // 
             this.SaveGunaBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -190,10 +181,12 @@ namespace LogBook_
             this.RefuseGunaBtn.TabIndex = 8;
             this.RefuseGunaBtn.Text = "İmtina etmək";
             this.RefuseGunaBtn.Visible = false;
+            this.RefuseGunaBtn.Click += new System.EventHandler(this.RefuseGunaBtn_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Thistle;
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.label9);
@@ -205,14 +198,26 @@ namespace LogBook_
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(-4, 154);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1305, 87);
+            this.groupBox1.Size = new System.Drawing.Size(1390, 87);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Thistle;
+            this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(461, 47);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(30, 34);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "?";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::LogBook_.Properties.Resources.diamond_10_;
-            this.pictureBox2.Location = new System.Drawing.Point(821, 44);
+            this.pictureBox2.Location = new System.Drawing.Point(855, 44);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(26, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,18 +228,19 @@ namespace LogBook_
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(397, 47);
+            this.radioButton1.Location = new System.Drawing.Point(434, 55);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(21, 20);
             this.radioButton1.TabIndex = 11;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(795, 47);
+            this.label9.Location = new System.Drawing.Point(829, 47);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(20, 22);
             this.label9.TabIndex = 13;
@@ -244,7 +250,7 @@ namespace LogBook_
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(928, 42);
+            this.label8.Location = new System.Drawing.Point(1024, 44);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 22);
             this.label8.TabIndex = 11;
@@ -254,7 +260,7 @@ namespace LogBook_
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(654, 42);
+            this.label7.Location = new System.Drawing.Point(706, 44);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 22);
             this.label7.TabIndex = 12;
@@ -264,7 +270,7 @@ namespace LogBook_
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(531, 42);
+            this.label6.Location = new System.Drawing.Point(571, 42);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 22);
             this.label6.TabIndex = 11;
@@ -274,7 +280,7 @@ namespace LogBook_
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(352, 22);
+            this.label5.Location = new System.Drawing.Point(392, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(173, 22);
             this.label5.TabIndex = 7;
@@ -284,7 +290,7 @@ namespace LogBook_
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(186, 42);
+            this.label4.Location = new System.Drawing.Point(219, 44);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 22);
             this.label4.TabIndex = 6;
@@ -341,18 +347,27 @@ namespace LogBook_
             this.TeacherLbl.Text = "Elvin Camalzade";
             this.TeacherLbl.Visible = false;
             // 
+            // subjectTxtBox
+            // 
+            this.subjectTxtBox.Location = new System.Drawing.Point(495, 77);
+            this.subjectTxtBox.Name = "subjectTxtBox";
+            this.subjectTxtBox.Size = new System.Drawing.Size(471, 26);
+            this.subjectTxtBox.TabIndex = 14;
+            this.subjectTxtBox.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 670);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1389, 670);
+            this.Controls.Add(this.subjectTxtBox);
             this.Controls.Add(this.TeacherLbl);
             this.Controls.Add(this.TeacherNameLBl);
             this.Controls.Add(this.TeacherNameTxtBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.RefuseGunaBtn);
             this.Controls.Add(this.SaveGunaBtn);
-            this.Controls.Add(this.SubjectlistBox);
             this.Controls.Add(this.penPictureBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.SecondTeacherRadioBtn);
@@ -382,7 +397,6 @@ namespace LogBook_
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button RefuseGunaBtn;
         private Guna.UI2.WinForms.Guna2Button SaveGunaBtn;
-        private System.Windows.Forms.ListBox SubjectlistBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
@@ -396,6 +410,8 @@ namespace LogBook_
         private System.Windows.Forms.Label TeacherNameLBl;
         private System.Windows.Forms.TextBox TeacherNameTxtBox;
         private System.Windows.Forms.Label TeacherLbl;
+        private System.Windows.Forms.TextBox subjectTxtBox;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -16,6 +16,7 @@ namespace LogBook_
         {
             InitializeComponent();
             LoadUserControl();
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,11 +45,13 @@ namespace LogBook_
         {
             VisibleChoise();
             TeacherLbl.Visible = true;
+            TeacherNameLBl.Visible = false;
+            TeacherNameTxtBox.Visible = false;
         }
         public void VisibleChoise()
         {
             label2.Visible = true;
-            SubjectlistBox.Visible = true;
+            subjectTxtBox.Visible = true;
             SaveGunaBtn.Visible = true;
             RefuseGunaBtn.Visible = true;
             penPictureBox.Visible = true;
@@ -59,8 +62,10 @@ namespace LogBook_
             VisibleChoise();
             TeacherNameLBl.Visible = true;
             TeacherNameTxtBox.Visible = true;
+            TeacherLbl.Visible = false;
         }
-
+        
+       List<User> users = new List<User>();
         public void LoadUserControl()
         {
             User user1 = new User()
@@ -93,18 +98,17 @@ namespace LogBook_
                 Date = DateTime.Now,
             };
 
-
-
-
-            List<User> users = new List<User>();
+            
             users.Add(user1);
             users.Add(user2);
             users.Add(user3);
             users.Add(user4);
             users.Add(user5);
 
+            
             int y = 149;
             int no = 1;
+
             foreach (var user in users)
             {
                 UserControl1 userControl1 = new UserControl1();
@@ -116,6 +120,29 @@ namespace LogBook_
                 y += 70;
                 this.Controls.Add(userControl1);
             }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            foreach (var user in users)
+            {
+                UserControl1 userControl1 = new UserControl1();
+                //subjectTxtBox.Text = userControl1.Attend();
+            }
+
+        }
+
+       
+        private void RefuseGunaBtn_Click(object sender, EventArgs e)
+        {
+            subjectTxtBox.Text = string.Empty;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("1.İştirak edir  " +
+               "2.Gecikib  " +
+               "3.Dərsdə yoxdur ");
         }
     }
 }

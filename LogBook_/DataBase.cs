@@ -9,8 +9,9 @@ namespace LogBook_
     class User
     {
         public User() { }
-        public User(string fullname, DateTime date, string attend, int grade, int gradeInClass, int diamondCount, string teachersOpinion)
+        public User(string subject, string fullname, DateTime date, string attend, int grade, int gradeInClass, int diamondCount, string teachersOpinion)
         {
+            Subject = subject;
             Fullname = fullname;
             Date = date;
             Attend = attend;
@@ -19,7 +20,7 @@ namespace LogBook_
             DiamondCount = diamondCount;
             TeachersOpinion = teachersOpinion;
         }
-
+        public string Subject { get; set; }
         public string Fullname { get; set; }
         public DateTime Date { get; set; }
         public string Attend { get; set; }
