@@ -31,5 +31,13 @@ namespace LogBook_
 
     }
    
+    class DataBase
+    {
+        public List<User> Users { get; set; } = new List<User>();
 
+        public void AddUser(User user)
+        {
+            Users.Add(user);
+        }
+    }
 }

@@ -16,9 +16,23 @@ namespace LogBook_
         {
             InitializeComponent();
             LoadUserControl();
-           
+            StaticCount = 5;
+            DiamontCountLbl.Text = staticCount.ToString();
         }
+        private static int staticCount;
 
+        public static int StaticCount
+        {
+            get { return staticCount; }
+            set { staticCount = value;
+            
+            }
+        }
+        private void Okay(object sender,EventArgs e)
+        {
+            DiamontCountLbl.Text = staticCount.ToString();
+        }
+        public string DiamondCount { get {return DiamontCountLbl.Text; } set { DiamontCountLbl.Text = value; } }
         private void Form1_Load(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(150, 200, 250);
@@ -38,7 +52,10 @@ namespace LogBook_
 
         private void SaveGunaBtn_Click(object sender, EventArgs e)
         {
-
+            foreach (var item in userControls)
+            {
+                item.Enabled = true;
+            }
         }
 
         private void TeacherradioBtn_CheckedChanged(object sender, EventArgs e)
@@ -66,6 +83,7 @@ namespace LogBook_
         }
         
        List<User> users = new List<User>();
+        List<UserControl1> userControls = new List<UserControl1>();
         public void LoadUserControl()
         {
             User user1 = new User()
@@ -112,24 +130,49 @@ namespace LogBook_
             foreach (var user in users)
             {
                 UserControl1 userControl1 = new UserControl1();
+                userControl1.DiamondClick += Okay;
+                userControl1.Enabled = false;
+                TurnOfElement(userControl1);
                 userControl1.No = no++;
                 userControl1.Fullname = user.Fullname;
-                userControl1.Date = user.Date.ToLongDateString();                
-
+                userControl1.Date = user.Date.ToLongDateString();
+                // userControl1.Attent = true;
+                // userControl1.Point1 = "12";
+                
+                userControl1.CommentText = "Salam";
                 userControl1.Location = new Point(0, y);
                 y += 70;
-                this.Controls.Add(userControl1);
+                userControls.Add(userControl1);
+                this.Controls.AddRange(userControls.ToArray());
             }
         }
-
+        public static void TurnOfElement(UserControl1 userControl)
+        {
+            userControl.Combobox1 = false;
+            userControl.Combobox2 = false;
+            userControl.Diamond1 = false;
+            userControl.Diamond2 = false;
+            userControl.Diamond3 = false;
+            userControl.XButton = false;
+            userControl.CommentPBox = false;
+        }
+        public static void TurnOnElement(UserControl1 userControl)
+        {
+            userControl.Combobox1 = true;
+            userControl.Combobox2 = true;
+            userControl.Diamond1 = true;
+            userControl.Diamond2 = true;
+            userControl.Diamond3 = true;
+            userControl.XButton = true;
+            userControl.CommentPBox = true;
+        }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            foreach (var user in users)
+            foreach (var user in userControls)
             {
-                UserControl1 userControl1 = new UserControl1();
-                //subjectTxtBox.Text = userControl1.Attend();
+                user.Attent = true;
+                TurnOnElement(user);
             }
-
         }
 
        

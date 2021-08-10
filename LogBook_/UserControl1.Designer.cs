@@ -33,9 +33,6 @@ namespace LogBook_
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.UserGroupBox = new System.Windows.Forms.GroupBox();
             this.commentTxtBox = new System.Windows.Forms.TextBox();
-            this.darkDiamond3PBox = new System.Windows.Forms.PictureBox();
-            this.darkDiamond2PBox = new System.Windows.Forms.PictureBox();
-            this.darkDiamond1PBox = new System.Windows.Forms.PictureBox();
             this.XBtn = new System.Windows.Forms.Button();
             this.RefuseGunaBtn = new Guna.UI2.WinForms.Guna2Button();
             this.SaveGunaBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -52,9 +49,6 @@ namespace LogBook_
             this.DateLbl = new System.Windows.Forms.Label();
             this.FullnameLbl = new System.Windows.Forms.Label();
             this.UserGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond3PBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond2PBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond1PBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommentPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond3PBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond1PBox)).BeginInit();
@@ -65,9 +59,6 @@ namespace LogBook_
             // 
             this.UserGroupBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.UserGroupBox.Controls.Add(this.commentTxtBox);
-            this.UserGroupBox.Controls.Add(this.darkDiamond3PBox);
-            this.UserGroupBox.Controls.Add(this.darkDiamond2PBox);
-            this.UserGroupBox.Controls.Add(this.darkDiamond1PBox);
             this.UserGroupBox.Controls.Add(this.XBtn);
             this.UserGroupBox.Controls.Add(this.RefuseGunaBtn);
             this.UserGroupBox.Controls.Add(this.SaveGunaBtn);
@@ -96,42 +87,6 @@ namespace LogBook_
             this.commentTxtBox.Size = new System.Drawing.Size(287, 26);
             this.commentTxtBox.TabIndex = 34;
             this.commentTxtBox.Visible = false;
-            // 
-            // darkDiamond3PBox
-            // 
-            this.darkDiamond3PBox.Image = global::LogBook_.Properties.Resources.diamond_10_;
-            this.darkDiamond3PBox.Location = new System.Drawing.Point(877, 63);
-            this.darkDiamond3PBox.Name = "darkDiamond3PBox";
-            this.darkDiamond3PBox.Size = new System.Drawing.Size(26, 25);
-            this.darkDiamond3PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.darkDiamond3PBox.TabIndex = 33;
-            this.darkDiamond3PBox.TabStop = false;
-            this.darkDiamond3PBox.Visible = false;
-            this.darkDiamond3PBox.Click += new System.EventHandler(this.darkDiamond3PBox_Click);
-            // 
-            // darkDiamond2PBox
-            // 
-            this.darkDiamond2PBox.Image = global::LogBook_.Properties.Resources.diamond_10_;
-            this.darkDiamond2PBox.Location = new System.Drawing.Point(845, 63);
-            this.darkDiamond2PBox.Name = "darkDiamond2PBox";
-            this.darkDiamond2PBox.Size = new System.Drawing.Size(26, 25);
-            this.darkDiamond2PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.darkDiamond2PBox.TabIndex = 32;
-            this.darkDiamond2PBox.TabStop = false;
-            this.darkDiamond2PBox.Visible = false;
-            this.darkDiamond2PBox.Click += new System.EventHandler(this.darkDiamond2PBox_Click);
-            // 
-            // darkDiamond1PBox
-            // 
-            this.darkDiamond1PBox.Image = global::LogBook_.Properties.Resources.diamond_10_;
-            this.darkDiamond1PBox.Location = new System.Drawing.Point(813, 63);
-            this.darkDiamond1PBox.Name = "darkDiamond1PBox";
-            this.darkDiamond1PBox.Size = new System.Drawing.Size(26, 25);
-            this.darkDiamond1PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.darkDiamond1PBox.TabIndex = 31;
-            this.darkDiamond1PBox.TabStop = false;
-            this.darkDiamond1PBox.Visible = false;
-            this.darkDiamond1PBox.Click += new System.EventHandler(this.darkDiamond1PBox_Click);
             // 
             // XBtn
             // 
@@ -316,6 +271,7 @@ namespace LogBook_
             this.BlueGunaRadioBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.BlueGunaRadioBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.BlueGunaRadioBtn.UncheckedState.Parent = this.BlueGunaRadioBtn;
+            this.BlueGunaRadioBtn.CheckedChanged += new System.EventHandler(this.BlueGunaRadioBtn_CheckedChanged);
             // 
             // FuchsiaGunaRadioBtn
             // 
@@ -356,6 +312,7 @@ namespace LogBook_
             this.CrimsonGunaRadioBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.CrimsonGunaRadioBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.CrimsonGunaRadioBtn.UncheckedState.Parent = this.CrimsonGunaRadioBtn;
+            this.CrimsonGunaRadioBtn.CheckedChanged += new System.EventHandler(this.CrimsonGunaRadioBtn_CheckedChanged);
             // 
             // Diamond2PBox
             // 
@@ -397,9 +354,6 @@ namespace LogBook_
             this.Size = new System.Drawing.Size(1386, 129);
             this.UserGroupBox.ResumeLayout(false);
             this.UserGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond3PBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond2PBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.darkDiamond1PBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommentPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond3PBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Diamond1PBox)).EndInit();
@@ -412,9 +366,6 @@ namespace LogBook_
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.GroupBox UserGroupBox;
         private System.Windows.Forms.TextBox commentTxtBox;
-        private System.Windows.Forms.PictureBox darkDiamond3PBox;
-        private System.Windows.Forms.PictureBox darkDiamond2PBox;
-        private System.Windows.Forms.PictureBox darkDiamond1PBox;
         private System.Windows.Forms.Button XBtn;
         private Guna.UI2.WinForms.Guna2Button RefuseGunaBtn;
         private Guna.UI2.WinForms.Guna2Button SaveGunaBtn;
